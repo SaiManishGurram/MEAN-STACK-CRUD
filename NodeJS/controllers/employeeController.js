@@ -6,7 +6,7 @@ var { Employee } = require('../models/employee');
 // => localhost:3000/employees/
 
 //Get all employees
-router.get('/', (req, res) => {
+router.get('/all', (req, res) => {
     Employee.find((err, docs) => {
         if (!err) {
             res.send(docs)
