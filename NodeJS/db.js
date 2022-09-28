@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/CrudDB', (err)=>{
+mongoose.connect('mongodb+srv://SaiManish:mongodbpass@cluster0.24mx0.mongodb.net/MEAN-CRUD?retryWrites=true&w=majority', (err)=>{
     if(!err) {
         console.log('MongoDB connection successfull..!');
     } else {
